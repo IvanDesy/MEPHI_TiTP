@@ -1,0 +1,15 @@
+people_package\Teacher.class
+dia_b22_902\titp_lab_1\MainWindow.class
+people_package\Student.class
+book_package\EducBookRU.class
+Storage_package\Library.class
+book_package\BookFactory.class
+people_package\PeopleFactory.class
+book_package\AbstractBook.class
+people_package\chair_package\Chair.class
+book_package\EducBookENG.class
+people_package\AbstractPeople.class
+Storage_package\StorageChair.class
+book_package\FictionBookRU.class
+book_package\FictionBookENG.class
+dia_b22_902\titp_lab_1\TiTP_lab_1.class
