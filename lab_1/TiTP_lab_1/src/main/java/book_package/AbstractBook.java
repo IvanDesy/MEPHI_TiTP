@@ -10,7 +10,6 @@ public abstract class AbstractBook {
         this.name = name;
         this.lang = lang;
     } 
-    
     public String getLang(){
         return this.lang;
     }

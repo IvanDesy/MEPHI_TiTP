@@ -6,7 +6,7 @@ public class FictionBookENG extends AbstractBook{
         super(name, author, "ENG");
         this.country = country;
     }
-    public String getcountry(){
+    public String getCountry(){
         return country;
     }
 }

@@ -1,24 +1,22 @@
 package people_package;
 
-import book_package.AbstractBook;
-import java.util.ArrayList;
-
 public abstract class AbstractPeople {
     private final String name;
     private final String patronymic;
     private final String lastname;
-    private ArrayList<AbstractBook> books = new ArrayList<>();
+    private final String role;
     
-    AbstractPeople(String name, String patronymic, String lastname){
+    AbstractPeople(String name, String patronymic, String lastname, String role){
         this.name = name;
         this.patronymic = patronymic;
         this.lastname = lastname;
+        this.role = role;
     }
     
     public String getFullName(){
-        return lastname + name + patronymic;
+        return lastname + " " + name + " " + patronymic;
     }
-    public void addBook(AbstractBook book){
-        books.add(book);
+    public String getRole(){
+        return role;
     }
 }

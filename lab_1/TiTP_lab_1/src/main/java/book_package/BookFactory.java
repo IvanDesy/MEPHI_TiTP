@@ -10,7 +10,7 @@ public class BookFactory {
         }
         return null;
     }
-    public static AbstractBook createBook(String what, String name, String author, String university, String level){
+    public static AbstractBook createBook(String what, String name, String author, String university, int level){
         return new EducBookENG(name, author, university, level);
     }
     public static AbstractBook createBook(String what, String name, String author){

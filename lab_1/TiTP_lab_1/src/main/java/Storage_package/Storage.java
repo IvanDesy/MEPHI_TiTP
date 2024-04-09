@@ -4,23 +4,12 @@ import java.util.ArrayList;
 import book_package.AbstractBook;
 import people_package.Student;
 import people_package.Teacher;
+import people_package.chair_package.Chair;
 
 
 public class Storage {
-    
-    public ArrayList<Teacher> teachers= new ArrayList<Teacher>();
-    public ArrayList<Student> students= new ArrayList<Student>();
-    public ArrayList<AbstractBook> books = new ArrayList<>();
-    
-    public void fillTeachers(){
-        
-    }
-    
-    public void fillStudents(){
-        
-    }
-    
-    public void fillBooks(){
-        
-    }
+    public static ArrayList<Teacher> teachers = new ArrayList<>();;
+    public static ArrayList<Student> students = new ArrayList<>();;        
+    public static ArrayList<AbstractBook> books = new ArrayList<>();;
+    public static ArrayList<Chair> chairs = new ArrayList<>();;
 }

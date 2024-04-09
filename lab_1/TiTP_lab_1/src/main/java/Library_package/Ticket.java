@@ -1,23 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Library_package;
 import people_package.*;
 import book_package.*;
 import java.util.ArrayList;
 
-/**
- *
- * @author vanya
- */
 public class Ticket {
     public AbstractPeople people;
-    private ArrayList<AbstractBook> books = new ArrayList<>();
+    private final ArrayList<AbstractBook> books;
+    
+    public Ticket(AbstractPeople people){
+        this.people = people;
+        books = new ArrayList<>();
+    }
     public AbstractPeople getPeople(){
         return people;
     }
+    public void addBook(AbstractBook book){
+        books.add(book);
+    }
     public ArrayList<AbstractBook> getBooks(){
         return books;
+    }
+    public void delBook(AbstractBook book){
+        books.remove(book);
     }
 }

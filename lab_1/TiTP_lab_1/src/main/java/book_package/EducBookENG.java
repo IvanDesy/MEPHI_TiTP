@@ -3,8 +3,8 @@ package book_package;
 public class EducBookENG extends AbstractBook{
 
     private final String university;
-    private final String level;
-    public EducBookENG(String name, String author, String university, String level) {
+    private final int level;
+    public EducBookENG(String name, String author, String university, int level) {
         super(name, author, "ENG");
         this.university = university;
         this.level = level;
@@ -12,7 +12,7 @@ public class EducBookENG extends AbstractBook{
     public String getUniversity(){
         return university;
     }
-    public String getLevel(){
+    public int getLevel(){
         return level;
     }    
 }
