@@ -121,7 +121,12 @@ public class DataMaster {
             int randomNumberOfBooks = randomInt(3, 10);
             int randomNumBook;
             for(int i = 0; i < randomNumberOfBooks; i++){
-                randomNumBook = randomInt(1, Storage.books.size());
+            	randomNumBook = randomInt(1, Storage.books.size());
+            	while(ticket.getBooks().contains(Storage.books.get(randomNumBook - 1)) == true) {
+            		randomNumBook = randomInt(1, Storage.books.size());
+            	}
+                
+                
                 ticket.addBook(Storage.books.get(randomNumBook - 1));
             }
             tickets.add(ticket);
@@ -131,7 +136,10 @@ public class DataMaster {
             int randomNumberOfBooks = randomInt(3, 10);
             int randomNumBook;
             for(int i = 0; i < randomNumberOfBooks; i++){
-                randomNumBook = randomInt(1, Storage.books.size());
+            	randomNumBook = randomInt(1, Storage.books.size());
+            	while(ticket.getBooks().contains(Storage.books.get(randomNumBook - 1)) == true) {
+            		randomNumBook = randomInt(1, Storage.books.size());
+            	}
                 ticket.addBook(Storage.books.get(randomNumBook - 1));
             }
             tickets.add(ticket);
