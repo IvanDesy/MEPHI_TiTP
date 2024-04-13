@@ -16,7 +16,7 @@ public class LibraryWindow extends javax.swing.JFrame {
      * Creates new form MainWindow
      */
     public LibraryWindow() {
-
+        initComponents();
         /**
          * This method is called from within the constructor to initialize the
          * form. WARNING: Do NOT modify this code. The content of this method is
@@ -67,6 +67,8 @@ public class LibraryWindow extends javax.swing.JFrame {
     private javax.swing.JTree tree;
     // End of variables declaration//GEN-END:variables
 
+    private void initComponents(){}
+    
     private DefaultMutableTreeNode fillJTree() {
         // Создание объекта библиотеки
         Library library = new Library();
