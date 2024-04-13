@@ -15,6 +15,19 @@ public class LibraryWindow extends javax.swing.JFrame {
     public LibraryWindow() {
         initComponents();
 
+        
+    }// </editor-fold>                        
+
+    /**
+     * @param args the command line arguments
+     */
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTree tree;
+    // End of variables declaration//GEN-END:variables
+
+    private void initComponents(){
         jScrollPane1 = new javax.swing.JScrollPane();
 
         DefaultMutableTreeNode rootNode = fillJTree();
@@ -49,18 +62,7 @@ public class LibraryWindow extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>                        
-
-    /**
-     * @param args the command line arguments
-     */
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTree tree;
-    // End of variables declaration//GEN-END:variables
-
-    private void initComponents(){}
+    }
     
     private DefaultMutableTreeNode fillJTree() {
         // Создание объекта библиотеки
