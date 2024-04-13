@@ -29,7 +29,7 @@ public class LibraryWindow extends javax.swing.JFrame {
 
         // Создание панели прокрутки для JTree
         JScrollPane scrollPane = new JScrollPane(tree);
-        ;
+        
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LibraryWindow");
