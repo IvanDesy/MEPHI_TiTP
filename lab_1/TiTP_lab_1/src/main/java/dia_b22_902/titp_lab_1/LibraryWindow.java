@@ -14,7 +14,7 @@ public class LibraryWindow extends javax.swing.JFrame {
      */
     public LibraryWindow() {
         initComponents();
-
+        fillJTree();
         
     }// </editor-fold>                        
 
